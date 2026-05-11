@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>좌석 배치도</title>
+</head>
+
+<body>
+  <h1>좌석 배치도</h1>
+  <script>
+    var pNum = prompt("입장객은 몇 명인가요?");
+    var colNum = prompt("한 줄에 몇 명씩 앉습니까?");
+
+    if (pNum % colNum === 0)
+      rowNum = parseInt(pNum / colNum);
+    // parseInt = 문자열 인자를 해석(parse)하여 특정 진수(radix)의 정수(integer)를 반환하는 자바스크립트 및 자바 함수
+    else
+      rowNum = parseInt(pNum / colNum) + 1;
+
+    document.write("모두 " + rowNum + "개의 줄이 필요합니다. ")
+
+  </script>
+</body>
+
+</html>
