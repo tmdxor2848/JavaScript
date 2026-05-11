@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>if-2</title>
+</head>
+
+<body>
+  <h2>입력 취소를 눌렀을때만 null 아무것도 안적고 확인하는건 null이 아님</h2>
+  <script>
+    var num = prompt("숫자를 입력하세요.")
+
+    if (num !== null) {   // 입력취소를 눌렀을때만 null 아무것도 안적고 확인하는건 null이 아님
+      if (num % 3 === 0)
+        alert("3의 배수입니다.");
+      else
+        alert("3의 배수가 아닙니다.");
+    }
+    else
+      alert("입력이 취소됐습니다.");
+  </script>
+</body>
+
+</html>
