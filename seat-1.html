@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>좌석배치도2</title>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+
+    td {
+      border: 1px solid #ccc;
+      padding: 5px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>좌석 배치도</h1>
+  <script>
+    var pNum = prompt("입장객은 몇 명인가요?");
+    var colNum = prompt("한 줄에 몇 명씩 앉습니까?");
+
+    if (pNum % colNum === 0)
+      rowNum = parseInt(pNum / colNum);
+    // parseInt = 문자열 인자를 해석(parse)하여 특정 진수(radix)의 정수(integer)를 반환하는 자바스크립트 및 자바 함수
+    else
+      rowNum = parseInt(pNum / colNum) + 1;
+
+    // document.write("모두 " + rowNum + "개의 줄이 필요합니다. ")
+
+    var i, j;
+    document.write("<table>");
+    for (i = 0; i < rowNum; i++) {
+      document.write("<tr>")
+      for (j = 1; j <= colNum; j++) {
+        seatNum = i * colNum + j;
+        if (seatNum > pNum) break;
+        document.write("<td>좌석 " + seatNum + " </td>");
+      }
+      document.write("</tr>")
+    }
+    document.write("</table>");
+
+  </script>
+</body>
+
+</html>
