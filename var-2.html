@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>var 예약어로 지역 변수 와 전역 변수</title>
+</head>
+
+<body>
+  <script>
+    function addNum() {
+      var sum = 10 + 20; // 지역 변수 선언 
+      multi = 10 * 20;  // 전역 변수 선언
+    }
+    addNum();
+    console.log(multi);
+    // 오류 : addNum()함수 안에서 선언한 sum을 밖에서 불러와서
+  </script>
+</body>
+
+</html>
