@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko>
+<head>
+  <meta charset=" UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>매개변수가 없는 화살표 함수</title>
+</head>
+
+<body>
+  <script>
+    // 매개변수가 없는 함수
+    const hi = function () {
+      return "안녕하세요?";
+    }
+
+    // 매개 변수가 없는 화살표 함수
+    const hi = () => { return "안녕하세요?"; }
+
+    // 매개 변수가 없는 화살표 함수(중괄호 생략)
+    // 중괄호 안에 함수 내용이 한 줄뿐이라면 중괄호 생략 가능
+    const hi = () => "안녕하세요?";
+  </script>
+</body>
+
+</html>
