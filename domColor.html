@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>버튼 클릭해서 글자색 바꾸기</title>
+</head>
+
+<body>
+  <button id="change">글자색 바꾸기</button>
+  <p>빈집
+    <br>
+    기형도
+    <br>
+    사랑을 잃고 나는 쓰네
+    <br>
+
+    잘 있거라, 짧았던 밤들아
+    <br>
+    창밖을 떠돌던 겨울 안개들아
+    <br>
+    아무것도 모르던 촛불들아, 잘 있거라
+    <br>
+    공포를 기다리던 흰 종이들아
+    <br>
+    망설임을 대신하던 눈물들아
+    <br>
+    잘 있거라, 더 이상 내 것이 아닌 열망들아
+    <br>
+
+    장님처럼 나 이제 더듬거리며 문을 잠그네
+    <br>
+    가엾은 내 사랑 빈집에 갇혔네
+    <br>
+    [출처] 한국인이 가장 좋아하는 시 모음 40편 (한국일보-설문조사 반영)|작성자 나는나무
+  </p>
+  <script>
+    // 방법 1 : 웹 요소를 변수로 지정 & 미리 만든 함수 사용
+    // var changeBtn = document.querySelector("#change");
+    // changeBtn.onclick = changeColor;
+    // // 함수 이름뒤에 괄호 없음!
+
+    // function changeColor() {
+    //   document.querySelector("p").style.color = "#f00";
+    // }
+
+    // 웹 요소를 프로그램 안에서 여러번 사용하지 않는다면 
+    // 방법 2 : 웹 요소를 따로 변수로 만들지 않고 사용
+    // document.querySelector("#change").onclick = changeColor;
+
+    // function changeColor() {
+    //   document.querySelector("p").style.color = "skyblue"
+    // }
+
+    // 함수를 딱 한 번만 사용한다면
+    document.querySelector("#change").onclick = function () {
+      document.querySelector("p").style.color = "violet";
+    };
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>버튼을 클릭해서 설명 글 열고 닫기</title>
+</head>
+
+<body>
+  <div id="item">
+    <img
+      src="https://i.namu.wiki/i/xFO_Flri0En2PiLy3md9TIasBzfB-Rx0GmN08jb6GkMaRfEFfVPUdX3kkYgX1MtGdYHYyhLBy_HCOf_WqbEIsEZ7aWnsjgntssA_t4ap2PfYA_4Bx3_oKYlxYkXmmN42buKJwPFFX1uGSUdnUsLcDg.webp"
+      alt="">
+    <button class="over" id="open">상세 설명 보기</button>
+    <div id="desc" class="detail">
+      <h4>아악무</h4>
+      <p>디디에레아과 Portulacaria속에 속하는 은행목, 은공손수(Portulacaria afra)의 변종인 다육식물의 일종으로 난이도가 높은 것으로 알려져 있는 식물이다. 영어로는 elephant
+        bush이라고 하는데 코끼리가 잘 먹기 때문이다. 아프리칸스어로는 spekboom이라고 한다.</p>
+      <button id="close">상세 설명 닫기</button>
+    </div>
+  </div>
+  <script>
+    document.querySelector('#open').onclick = function () {
+      document.querySelector('#desc').style.display = "block";
+      document.querySelector('#opne').style.display = "none";
+    }
+    document.querySelector('#close').onclick = function () {
+      document.querySelector('#desc').style.display = "none";
+      document.querySelector('#opne').style.display = "block";
+    }
+
+  </script>
+</body>
+
+</html>

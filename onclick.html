@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>onclick</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    ul {
+      display: flex;
+      width: 100%;
+      padding: 0;
+    }
+
+    li {
+      flex: 1;
+      width: auto;
+      height: 50px;
+
+      border: 1px solid gray;
+      list-style: none;
+      margin: 20px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    a {
+      width: 100%;
+      height: 100%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      text-decoration: none;
+      color: black;
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #result {
+      margin-top: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      height: 700px;
+      width: 90%;
+      border: 1px solid gray;
+      border-radius: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li><a href="#" onclick="changeBg('green')">Green</a></li>
+    <li><a href="#" onclick="changeBg('orange')">Orange</a></li>
+    <li><a href="#" onclick="changeBg('purple')">Purple</a></li>
+  </ul>
+  <div id="result"></div>
+  <script>
+    function changeBg(color) {
+      var result = document.querySelector('#result');
+      result.style.backgroundColor = color;
+    }
+  </script>
+</body>
+
+</html>
