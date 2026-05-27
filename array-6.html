@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>배열에서 요소 꺼내기</title>
+</head>
+
+<body>
+  <script>
+    var nums = [1, 2, 3];
+    var chars = ["a", "b", "c", "d"];
+
+    var numsChars = nums.concat(chars);
+    var charsNums = chars.concat(nums);
+
+    var popped1 = chars.pop();  // 마지막 요소를 꺼냄
+    var popped2 = chars.shift(); // 1번째 요소를 꺼냄
+    document.write("꺼낸 요소 : ", popped1, ",", popped2, "<br> 배열 :  ", chars)
+
+  </script>
+</body>
+
+</html>

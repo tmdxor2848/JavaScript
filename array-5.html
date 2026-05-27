@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>배열에 새로운 요소 추가하기</title>
+</head>
+
+<body>
+  <script>
+    var nums = [1, 2, 3];
+    var chars = ["a", "b", "c", "d"];
+
+    var numsChars = nums.concat(chars);
+    var charsNums = chars.concat(nums);
+
+    var ret1 = nums.push(4, 5); // 배열 맨 끝에 새로운 요소 추가
+    var ret2 = nums.unshift(0); // 배열 맨 앞에 새로운 요소 추가
+    document.write("길이 : ", ret2, "<br>배열 : ", nums)
+
+  </script>
+</body>
+
+</html>
