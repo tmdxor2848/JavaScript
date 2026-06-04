@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>splice() 매서드의 인수가 3개인 경우 요소 삭제.추가하기</title>
+  <title>slice() 매서드의 인수가 1개인 경우 요소 꺼내기</title>
 </head>
 
 <body>
@@ -16,11 +16,10 @@
     var numsChars = nums.concat(chars);
     var charsNums = chars.concat(nums);
 
-    var newChars = chars.splice(3, 4, "js"); // 인덱스 값 3부터 4 직전 요소 까지 꺼내기
+    var newColors = colors.slice(2); // 인덱스 값 2부터 마지막 요소 까지 꺼내기
 
-    document.write(newChars);
-    document.write("<br>");
-    document.write(chars);
+    document.write(newColors);
+
 
 
   </script>
