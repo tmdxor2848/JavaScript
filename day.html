@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/day.css">
+  <title>날자 계산</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="circle">
+      <h1>책 읽기</h1>
+      <p><span id="result"></span>일 연속으로 책 읽기를 달성 했군요.</p>
+      <p>축하 드립니다!</p>
+    </div>
+  </div>
+
+  <script>
+    var now = new Date("2026-06-04");
+    var firstDay = new Date("2026-04-01");
+
+    var toNow = now.getTime();
+    var toFirst = firstDay.getTime();
+    var passedTime = toNow - toFirst;
+
+    passedTime = Math.round(passedTime / (1000 * 60 * 60 * 24));
+
+    document.querySelector('#result').innerText = passedTime;
+  </script>
+</body>
+
+</html>
